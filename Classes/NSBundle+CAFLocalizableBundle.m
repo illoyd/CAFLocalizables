@@ -12,6 +12,9 @@
 
 -(NSArray *)loadLocalizedNibNamed:(NSString *)name owner:(id)owner options:(NSDictionary *)options
 {
+    // Determine development language
+    NSString *devLproj = [NSString stringWithFormat:@"%@.lproj", [self developmentLocalization]];
+    
 	// Get strings file for the specified nib
 	NSString *localizedStringsTableName = [[name lastPathComponent] stringByDeletingPathExtension];
 	NSString *localizedStringsTablePath = [self pathForResource:localizedStringsTableName ofType:@"strings"];
@@ -19,11 +22,8 @@
 	// Build nib...
 	NSArray *topLevelObjects = [self loadNibNamed:name owner:owner options:options];
     
-    // Determine development language
-    
-    
 	// And start localising
-	if ( localizedStringsTablePath && ![[[localizedStringsTablePath stringByDeletingLastPathComponent] lastPathComponent] isEqualToString:@"English.lproj"] )
+	if ( localizedStringsTablePath && ![[[localizedStringsTablePath stringByDeletingLastPathComponent] lastPathComponent] isEqualToString:devLproj] )
 		[self localizeStringsInObject:topLevelObjects table:localizedStringsTableName];
     
 	return topLevelObjects;
