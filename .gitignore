@@ -11,4 +11,6 @@ build/
 *.mode1v3
 *.mode2v3
 
-.xcodeproj/ !*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.pbxproj
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
