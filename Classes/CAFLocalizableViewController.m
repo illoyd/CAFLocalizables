@@ -2,7 +2,7 @@
 //  CAFLocalizableViewController.m
 //  CAFLocalizables
 //
-//  Created by Ian Lloyd on 2/01/11.
+//  Created by Ian Lloyd on 2 January 2011.
 //  Copyright 2011 Ian Lloyd. All rights reserved.
 //
 
