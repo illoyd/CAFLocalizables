@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C54F731112D154BD009A2A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54F731012D154BD009A2A86 /* Foundation.framework */; };
+		C54F731A12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */; };
+		C54F731B12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F731912D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m */; };
+		C5E2B95812D15C3D0057BB8D /* CAFLocalizableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */; };
+		C5E2B95912D15C3D0057BB8D /* CAFLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B95712D15C3D0057BB8D /* CAFLocalizableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C54F730E12D154BD009A2A86 /* libCAFLocalizables.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCAFLocalizables.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54F731012D154BD009A2A86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C54F731212D154BD009A2A86 /* CAFLocalizables-Prefix.pch */ = {isa = PBXFileReference; path = "CAFLocalizables-Prefix.pch"; sourceTree = "<group>"; };
+		C54F731212D154BD009A2A86 /* CAFLocalizables-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAFLocalizables-Prefix.pch"; sourceTree = "<group>"; };
+		C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CAFLocalizableBundle.h"; sourceTree = "<group>"; };
+		C54F731912D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CAFLocalizableBundle.m"; sourceTree = "<group>"; };
+		C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFLocalizableViewController.h; sourceTree = "<group>"; };
+		C5E2B95712D15C3D0057BB8D /* CAFLocalizableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFLocalizableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,10 @@
 		C54F730712D154BD009A2A86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */,
+				C54F731912D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m */,
+				C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */,
+				C5E2B95712D15C3D0057BB8D /* CAFLocalizableViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -76,6 +88,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54F731A12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h in Headers */,
+				C5E2B95812D15C3D0057BB8D /* CAFLocalizableViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54F731B12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m in Sources */,
+				C5E2B95912D15C3D0057BB8D /* CAFLocalizableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +157,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -154,7 +170,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
