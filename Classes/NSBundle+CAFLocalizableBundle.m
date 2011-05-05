@@ -7,8 +7,18 @@
 //
 
 #import "NSBundle+CAFLocalizableBundle.h"
+#import "CAFPluralizer.h"
 
 @implementation NSBundle (CAFLocalizableBundle)
+
+- (NSString *)localizedStringForKey:(NSString *)key number:(NSString*)number value:(NSString *)value table:(NSString *)tableName
+{
+    // Select the appropriate pluralized form of the key
+    NSString *pluralizedKey = [[CAFPluralizer sharedPluralizer] pluralizedKeyForKey:key number:number];
+    
+    // Return the normal response
+    return NSLocalizedStringFromTable(pluralizedKey, tableName, @"Pass to normal localization process");
+}
 
 -(NSArray *)loadLocalizedNibNamed:(NSString *)name owner:(id)owner options:(NSDictionary *)options
 {

@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C54F731112D154BD009A2A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54F731012D154BD009A2A86 /* Foundation.framework */; };
-		C54F731A12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */; };
+		C54F731A12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C54F731B12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F731912D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m */; };
-		C5E2B95812D15C3D0057BB8D /* CAFLocalizableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */; };
+		C5991E351373442B00C37C23 /* CAFPluralizerRule0.h in Headers */ = {isa = PBXBuildFile; fileRef = C5991E331373442B00C37C23 /* CAFPluralizerRule0.h */; };
+		C5991E361373442B00C37C23 /* CAFPluralizerRule0.m in Sources */ = {isa = PBXBuildFile; fileRef = C5991E341373442B00C37C23 /* CAFPluralizerRule0.m */; };
+		C5991E391373458500C37C23 /* CAFPluralizerRule1.h in Headers */ = {isa = PBXBuildFile; fileRef = C5991E371373458500C37C23 /* CAFPluralizerRule1.h */; };
+		C5991E3A1373458500C37C23 /* CAFPluralizerRule1.m in Sources */ = {isa = PBXBuildFile; fileRef = C5991E381373458500C37C23 /* CAFPluralizerRule1.m */; };
+		C5991E3D137346A000C37C23 /* CAFPluralizerRule2.h in Headers */ = {isa = PBXBuildFile; fileRef = C5991E3B137346A000C37C23 /* CAFPluralizerRule2.h */; };
+		C5991E3E137346A000C37C23 /* CAFPluralizerRule2.m in Sources */ = {isa = PBXBuildFile; fileRef = C5991E3C137346A000C37C23 /* CAFPluralizerRule2.m */; };
+		C5E2B95812D15C3D0057BB8D /* CAFLocalizableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5E2B95912D15C3D0057BB8D /* CAFLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B95712D15C3D0057BB8D /* CAFLocalizableViewController.m */; };
+		C5FE153913730D9900F4A8C0 /* CAFPluralizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FE153713730D9900F4A8C0 /* CAFPluralizer.h */; };
+		C5FE153A13730D9900F4A8C0 /* CAFPluralizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE153813730D9900F4A8C0 /* CAFPluralizer.m */; };
+		C5FE153C13730DDA00F4A8C0 /* CAFPluralizerRule.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FE153B13730DDA00F4A8C0 /* CAFPluralizerRule.h */; };
+		C5FE15441373122300F4A8C0 /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FE15431373122300F4A8C0 /* SynthesizeSingleton.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +30,21 @@
 		C54F731212D154BD009A2A86 /* CAFLocalizables-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAFLocalizables-Prefix.pch"; sourceTree = "<group>"; };
 		C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CAFLocalizableBundle.h"; sourceTree = "<group>"; };
 		C54F731912D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CAFLocalizableBundle.m"; sourceTree = "<group>"; };
+		C5991E331373442B00C37C23 /* CAFPluralizerRule0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFPluralizerRule0.h; sourceTree = "<group>"; };
+		C5991E341373442B00C37C23 /* CAFPluralizerRule0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFPluralizerRule0.m; sourceTree = "<group>"; };
+		C5991E371373458500C37C23 /* CAFPluralizerRule1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFPluralizerRule1.h; sourceTree = "<group>"; };
+		C5991E381373458500C37C23 /* CAFPluralizerRule1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFPluralizerRule1.m; sourceTree = "<group>"; };
+		C5991E3B137346A000C37C23 /* CAFPluralizerRule2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFPluralizerRule2.h; sourceTree = "<group>"; };
+		C5991E3C137346A000C37C23 /* CAFPluralizerRule2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFPluralizerRule2.m; sourceTree = "<group>"; };
+		C5991E3F137346DA00C37C23 /* CAFPluralizerRules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CAFPluralizerRules.plist; sourceTree = "<group>"; };
+		C5CFB9B312D4D85000E9ED4F /* CafLocalizables-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CafLocalizables-Info.plist"; sourceTree = "<group>"; };
+		C5CFB9B712D4D89E00E9ED4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFLocalizableViewController.h; sourceTree = "<group>"; };
 		C5E2B95712D15C3D0057BB8D /* CAFLocalizableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFLocalizableViewController.m; sourceTree = "<group>"; };
+		C5FE153713730D9900F4A8C0 /* CAFPluralizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFPluralizer.h; sourceTree = "<group>"; };
+		C5FE153813730D9900F4A8C0 /* CAFPluralizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFPluralizer.m; sourceTree = "<group>"; };
+		C5FE153B13730DDA00F4A8C0 /* CAFPluralizerRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFPluralizerRule.h; sourceTree = "<group>"; };
+		C5FE15431373122300F4A8C0 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,16 +66,29 @@
 				C54F730812D154BD009A2A86 /* Other Sources */,
 				C54F730912D154BD009A2A86 /* Frameworks */,
 				C54F730F12D154BD009A2A86 /* Products */,
+				C5CFB9B312D4D85000E9ED4F /* CafLocalizables-Info.plist */,
+				C5CFB9B712D4D89E00E9ED4F /* UIKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
 		C54F730712D154BD009A2A86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C5FE15431373122300F4A8C0 /* SynthesizeSingleton.h */,
 				C54F731812D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h */,
 				C54F731912D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m */,
 				C5E2B95612D15C3D0057BB8D /* CAFLocalizableViewController.h */,
 				C5E2B95712D15C3D0057BB8D /* CAFLocalizableViewController.m */,
+				C5FE153713730D9900F4A8C0 /* CAFPluralizer.h */,
+				C5FE153813730D9900F4A8C0 /* CAFPluralizer.m */,
+				C5FE153B13730DDA00F4A8C0 /* CAFPluralizerRule.h */,
+				C5991E331373442B00C37C23 /* CAFPluralizerRule0.h */,
+				C5991E341373442B00C37C23 /* CAFPluralizerRule0.m */,
+				C5991E371373458500C37C23 /* CAFPluralizerRule1.h */,
+				C5991E381373458500C37C23 /* CAFPluralizerRule1.m */,
+				C5991E3B137346A000C37C23 /* CAFPluralizerRule2.h */,
+				C5991E3C137346A000C37C23 /* CAFPluralizerRule2.m */,
+				C5991E3F137346DA00C37C23 /* CAFPluralizerRules.plist */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +126,12 @@
 			files = (
 				C54F731A12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.h in Headers */,
 				C5E2B95812D15C3D0057BB8D /* CAFLocalizableViewController.h in Headers */,
+				C5FE153913730D9900F4A8C0 /* CAFPluralizer.h in Headers */,
+				C5FE153C13730DDA00F4A8C0 /* CAFPluralizerRule.h in Headers */,
+				C5FE15441373122300F4A8C0 /* SynthesizeSingleton.h in Headers */,
+				C5991E351373442B00C37C23 /* CAFPluralizerRule0.h in Headers */,
+				C5991E391373458500C37C23 /* CAFPluralizerRule1.h in Headers */,
+				C5991E3D137346A000C37C23 /* CAFPluralizerRule2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +184,10 @@
 			files = (
 				C54F731B12D15504009A2A86 /* NSBundle+CAFLocalizableBundle.m in Sources */,
 				C5E2B95912D15C3D0057BB8D /* CAFLocalizableViewController.m in Sources */,
+				C5FE153A13730D9900F4A8C0 /* CAFPluralizer.m in Sources */,
+				C5991E361373442B00C37C23 /* CAFPluralizerRule0.m in Sources */,
+				C5991E3A1373458500C37C23 /* CAFPluralizerRule1.m in Sources */,
+				C5991E3E137346A000C37C23 /* CAFPluralizerRule2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +229,7 @@
 				DSTROOT = /tmp/CAFLocalizables.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CAFLocalizables-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -196,6 +243,7 @@
 				DSTROOT = /tmp/CAFLocalizables.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CAFLocalizables-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
