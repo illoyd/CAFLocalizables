@@ -12,6 +12,8 @@
 
 @property (nonatomic, retain, readwrite) id <CAFPluralizerRule> rule;
 
+-(id <CAFPluralizerRule>)newRuleForRuleNumber:(NSUInteger)pluralRuleNumber;
+
 @end
 
 @implementation CAFPluralizer
@@ -52,16 +54,20 @@ static CAFPluralizer *_sharedPluralizer = nil;
 
 -(id)init
 {
+	NSLocale *locale = [NSLocale currentLocale];
+	return [self initWithLocale:locale];
+}
+
+-(id)initWithLocale:(NSLocale *)locale
+{
 	self = [super init];
 	if ( self )
 	{
 		// Pick rule number from locale
-		NSUInteger pluralRuleNumber = [self pluralRuleForCurrentLocale];
+		NSUInteger pluralRuleNumber = [self pluralRuleForLocale:locale];
 
 		// Build rule
-		NSString *ruleClassName = [NSString stringWithFormat:@"CAFPluralizerRule%i", pluralRuleNumber];
-		Class ruleClass = NSClassFromString( ruleClassName );
-		id <CAFPluralizerRule> rule = [[ruleClass alloc] init];
+		id <CAFPluralizerRule> rule = [self newRuleForRuleNumber:pluralRuleNumber];
 		self.rule = rule;
 		[rule release];
 	}
@@ -74,32 +80,18 @@ static CAFPluralizer *_sharedPluralizer = nil;
 	[super dealloc];
 }
 
-+(NSString *)localizedStringForKey:(NSString *)key number:(NSString *)number table:(NSString *)tableName
++(NSUInteger)pluralFormForDouble:(double)number
 {
-	return [[[self class] sharedPluralizer] localizedStringForKey:key number:number table:tableName];
+	return [[[self sharedPluralizer] rule] pluralFormForDouble:number];
 }
 
--(NSString *)localizedStringForKey:(NSString *)key number:(NSString *)number table:(NSString *)tableName
+-(id <CAFPluralizerRule>)newRuleForRuleNumber:(NSUInteger)pluralRuleNumber
 {
-	NSScanner *scanner = [[[NSScanner alloc] initWithString:number] autorelease];
-	double nn;
-	if ( ![scanner scanDouble:&nn] )
-	{
-		NSLog( @"Failed to parse %@ as a double!", number );
-		return key;
-	}
-
-	NSUInteger ruleForm = [self.rule pluralFormForDouble:nn];
-	NSString *localized = NSLocalizedStringFromTable( key, tableName, nil );
-	NSArray *split = [localized componentsSeparatedByString:@";"];
-	return [split objectAtIndex:ruleForm];
-}
-
--(NSUInteger)pluralRuleForCurrentLocale
-{
-	// Get current locale
-	NSLocale *locale = [NSLocale currentLocale];
-	return [self pluralRuleForLocale:locale];
+	// Build rule
+	NSString *ruleClassName = [NSString stringWithFormat:@"CAFPluralizerRule%i", pluralRuleNumber];
+	Class ruleClass = NSClassFromString( ruleClassName );
+	id <CAFPluralizerRule> rule = [[ruleClass alloc] init];
+	return rule;
 }
 
 -(NSUInteger)pluralRuleForLocale:(NSLocale *)locale

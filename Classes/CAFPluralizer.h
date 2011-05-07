@@ -20,6 +20,8 @@
 #define CAFPluralizer_Rule_Plist @"CAFPluralizerRules.plist"
 #endif
 
+static NSString *const kPluralLocalizedStringSeparator = @";";
+
 @interface CAFPluralizer : NSObject {
 	@private
 	id <CAFPluralizerRule> _rule;
@@ -27,10 +29,9 @@
 
 @property (nonatomic, retain, readonly) id <CAFPluralizerRule> rule;
 
--(NSString *)localizedStringForKey:(NSString *)key number:(NSString *)number table:(NSString *)tableName;
-+(NSString *)localizedStringForKey:(NSString *)key number:(NSString *)number table:(NSString *)tableName;
+-(id)init;
+-(id)initWithLocale:(NSLocale *)locale;
 
--(NSUInteger)pluralRuleForCurrentLocale;
 -(NSUInteger)pluralRuleForLocale:(NSLocale *)locale;
 -(void)currentLocaleDidChange:(NSNotification *)notification;
 

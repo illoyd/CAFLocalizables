@@ -34,10 +34,4 @@
 -(NSString *)localizedStringForString:(NSString *)string table:(NSString *)table;
 
 
-#define CAFLocalizedPluralString( key, number, format, comment ) \
-        [[NSBundle mainBundle] localizedStringForKey : (key) number :[NSString stringWithFormat:(format), (number)] value : nil table : nil]
-
-#define CAFLocalizedPluralStringFromTable( key, number, format, tbl, comment ) \
-        [[NSBundle mainBundle] localizedStringForKey : (key) number :[NSString stringWithFormat:(format), (number)] value : nil table : (tbl)]
-
 @end
