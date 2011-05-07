@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol CAFPluralizerRule <NSObject>
+@protocol CAFPluralizerRule < NSObject >
 
 @required
 -(NSUInteger)pluralFormForDouble:(double)number;
-//-(NSUInteger)pluralFormForInteger:(NSInteger)number;
-//-(NSUInteger)pluralFormForDouble:(double)number;
+// -(NSUInteger)pluralFormForInteger:(NSInteger)number;
+// -(NSUInteger)pluralFormForDouble:(double)number;
 
 @end

@@ -13,13 +13,13 @@
 
 -(NSUInteger)pluralFormForDouble:(double)number
 {
-    // Between 0 and 2: singular
-    if ( number >= 0 && number <= 2 )
-        return 0;
-    
-    // Default: plural
-    else
-        return 1;
+	// [0 .. 2]: singular
+	if ( number >= 0 && number <= 2 )
+		return 0;
+
+	// Default: plural
+	else
+		return 1;
 }
 
 @end

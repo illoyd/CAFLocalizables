@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CAFPluralizerRule.h"
 
-@interface CAFPluralizerRule1 : NSObject <CAFPluralizerRule> {
-    
-}
+@interface CAFPluralizerRule1 : NSObject <CAFPluralizerRule> {}
 
 @end

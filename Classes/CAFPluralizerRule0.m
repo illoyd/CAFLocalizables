@@ -12,7 +12,7 @@
 
 -(NSUInteger)pluralFormForDouble:(double)number
 {
-    return 0;
+	return 0;
 }
 
 @end

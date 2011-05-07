@@ -10,8 +10,6 @@
 #import "CAFPluralizerRule.h"
 
 
-@interface CAFPluralizerRule0 : NSObject <CAFPluralizerRule> {
-    
-}
+@interface CAFPluralizerRule0 : NSObject <CAFPluralizerRule> {}
 
 @end
